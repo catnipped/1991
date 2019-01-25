@@ -3,7 +3,9 @@
 (A tabletop role-playing game for 1-3 players and a GM)
 
 - [1991: SPACE DEATH KILL MACHINE](#1991-space-death-kill-machine)
+  - [Setting](#setting)
   - [Design Philosphy](#design-philosphy)
+    - [Dice Mechanic](#dice-mechanic)
   - [Playing 1991](#playing-1991)
     - [Enemies](#enemies)
     - [Out of combat](#out-of-combat)
@@ -17,6 +19,8 @@
       - [Equip Weapon](#equip-weapon)
     - [Attacking](#attacking)
       - [Headshots](#headshots)
+      - [Explode](#explode)
+      - [Armor](#armor)
       - [Line of sight](#line-of-sight)
   - [Classes](#classes)
     - [Commando](#commando)
@@ -24,35 +28,12 @@
     - [Technomancer](#technomancer)
     - [Psi-Ops](#psi-ops)
   - [Weapons](#weapons)
+  - [Generating Levels](#generating-levels)
+  - [Resources](#resources)
 
-karaktär = {hp, armor, adrenalin, clip, vapen}
-
-varje vapen = tärning
-högsta på tärning = headshot
-lägsta = reload
-
-
-fiende = { hp, hs }
-
-
-
-armor = dice
-highest on die = skip all damage
-1 = armor breaks
-
-generera encounters från tabeller
-
-Room generation
-1-20
-Start generating with d4
-Room 20 is more exotic
-Room 1 is standard
-Rooms have “spawn points” equal to their number
-Monsters cost spawn points
+## Setting
 
 Primary objectives, one per player (destroy station, send secret data, protect the company, kill demon god)
-
-Adrenaline skill trees based on class: Brute, Commando, Psi-ops, Technomancer
 
 ## Design Philosphy
 
@@ -60,13 +41,17 @@ no dice-checks. just do stuff.
 explore rooms -> kill things -> get key -> get to elevator -> DEATH
 “Soft objectives” should feel like opportunities (unlock armory, send distress signal)
 
+### Dice Mechanic
+
+In general, rolling the highest possible on a die (6 on a d6, 12 on a d12) will give you a big bonus such as a "headshot" or the dice "explodes". Likewise, rolling a 1 will give you some kind of penalty.
+
 ## Playing 1991
 
 ### Enemies
 
 ### Out of combat
 
-When playing out-of-combat, the players say what their characters does ("I open the door", "I check for weapons"). There are no skill checks in 1991, your character simply can or can't do a thing and the GM decides if something is impossible to do.
+When playing out-of-combat, the players say what their characters do ("I open the door", "I check for weapons"). There are no skill checks in 1991, your character simply can or can't do a thing and the GM decides if something is impossible to do.
 
 ### Combat
 
@@ -109,7 +94,7 @@ This action represents opening doors, pushing buttons, picking up things and so 
 
 #### Strafe
 
-Strafing represents moving in parallel to an enemy, avoiding their attacks. During strafing **you cannot make headshots**. Enemies that attack you will give 1d4 less damage.
+Strafing represents moving in parallel to an enemy, avoiding their attacks. When you choose this action, you strafe until your next turn. **All damage to and from a strafing character is halved (rounded up)**.
 
 #### Reload
 
@@ -121,8 +106,15 @@ You can only have one weapon equipped, to use a different weapon you have to cho
 
 ### Attacking
 
-
 #### Headshots
+
+#### Explode
+
+Some skills and weapons give your dice the ability to "explode", this means that if you roll the highest possible on a die, you get to roll one more time and add your result to the last.
+
+#### Armor
+
+When a character takes damage, if they have armor, they roll their armor die. They then subtract the amount of damage that they roll. However, the armor breaks on **1** (and cannot be used again). If you roll the highest possible, you subtract all damage.
 
 #### Line of sight
 
@@ -166,12 +158,28 @@ You can only have one weapon equipped, to use a different weapon you have to cho
 
 ## Weapons
 
-| Name            | Range | Die | Ability                                         |
-| --------------- | ----- | --- | ----------------------------------------------- |
-| Chainsaw        | Melee | d20 | You can't lose ADR while you have this equipped |
-| Mace            | Melee | d10 |                                                 |
-| Handgun         | Short | d6  |                                                 |
-| Shotgun         | Short | d8  | Double-tap                                      |
-| Rocket Launcher | Long  | d4  | *Explodes* on **4**                             |
-| Railgun         | Long  | d4  |                                                 |
-| Machine Gun     | Long  | d20 |                                                 |
+| Name            | Range | Die | Clip | Ability                                         |
+| --------------- | ----- | --- | ---- | ----------------------------------------------- |
+| Chainsaw        | Melee | d20 | 0    | You can't lose ADR while you have this equipped |
+| Mace            | Melee | d10 | 0    |                                                 |
+| Handgun         | Short | d6  | 1    |                                                 |
+| Shotgun         | Short | d8  | 3    | Double-tap                                      |
+| Rocket Launcher | Long  | d4  | 5    | *Explodes* on **4**                             |
+| Railgun         | Long  | d4  | 5    |                                                 |
+| Machine Gun     | Long  | d20 | 5    |                                                 |
+
+## Generating Levels
+
+generera encounters från tabeller
+
+Room generation
+1-20
+Start generating with d4
+Room 20 is more exotic
+Room 1 is standard
+Rooms have “spawn points” equal to their number
+Monsters cost spawn points
+
+## Resources
+
+- Collection of DOOM maps [http://www.classicdoom.com/doommaps.htm](http://www.classicdoom.com/doommaps.htm)
