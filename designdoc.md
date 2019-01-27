@@ -49,6 +49,15 @@ In general, rolling the highest possible on a die (6 on a d6, 12 on a d12) will 
 
 ### Enemies
 
+| Name | Description | SP* | HP** | HS*** | Attacks |
+| ---- | ----------- | --- | ---- | ----- | ------- |
+|      |             |     | 1    | 1     |         |
+|      |             |     | 2    | 1     |         |
+|      |             |     | 3    | 1     |         |
+|      |             |     | 4    | 1     |         |
+
+  *Spawn Points **Health Points ***Headshots 
+
 ### Out of combat
 
 When playing out-of-combat, the players say what their characters do ("I open the door", "I check for weapons"). There are no skill checks in 1991, your character simply can or can't do a thing and the GM decides if something is impossible to do.
@@ -108,6 +117,8 @@ You can only have one weapon equipped, to use a different weapon you have to cho
 
 #### Headshots
 
+When attacking and rolling the highest amount with a weapon die, the character also deals 1 headshot. Most enemies can be killed with one headshot, some more.
+
 #### Explode
 
 Some skills and weapons give your dice the ability to "explode", this means that if you roll the highest possible on a die, you get to roll one more time and add your result to the last.
@@ -117,6 +128,8 @@ Some skills and weapons give your dice the ability to "explode", this means that
 When a character takes damage, if they have armor, they roll their armor die. They then subtract the amount of damage that they roll. However, the armor breaks on **1** (and cannot be used again). If you roll the highest possible, you subtract all damage.
 
 #### Line of sight
+
+Players and enemies can only attack you they can see their targets. A character can be also be partly covered, in which the character only takes half of any damage taken (rounded up).
 
 ## Classes
 
