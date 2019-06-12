@@ -12,21 +12,21 @@
     - [Combat](#combat)
       - [Adrenaline](#adrenaline)
       - [Actions](#actions)
-      - [Move](#move)
-      - [Interact with environment](#interact-with-environment)
-      - [Strafe](#strafe)
-      - [Reload](#reload)
-      - [Equip Weapon](#equip-weapon)
-    - [Attacking](#attacking)
-      - [Headshots](#headshots)
-      - [Explode](#explode)
-      - [Armor](#armor)
-      - [Line of sight](#line-of-sight)
-  - [Classes](#classes)
-    - [Commando](#commando)
-    - [Brute](#brute)
-    - [Technomancer](#technomancer)
-    - [Psi-Ops](#psi-ops)
+        - [Move](#move)
+        - [Interact with environment](#interact-with-environment)
+        - [Strafe](#strafe)
+        - [Reload](#reload)
+        - [Equip Weapon](#equip-weapon)
+      - [Attacking](#attacking)
+        - [Headshots](#headshots)
+        - [Explode](#explode)
+        - [Armor](#armor)
+        - [Line of sight](#line-of-sight)
+  - [Adrenaline Trees](#adrenaline-trees)
+    - [Spree (1+ ADR)](#spree-1-adr)
+    - [Rampage (5+ ADR)](#rampage-5-adr)
+    - [Dominating (10+ ADR)](#dominating-10-adr)
+    - [Unstoppable (12+ ADR)](#unstoppable-12-adr)
   - [Weapons](#weapons)
   - [Generating Levels](#generating-levels)
   - [Resources](#resources)
@@ -64,7 +64,7 @@ When playing out-of-combat, the players say what their characters do ("I open th
 
 ### Combat
 
-The moment things get hostile, combat begins. In combat players and enemies take turns doing actions such as strafing and shooting. If there are more than one player, they may choose their turn order. All players do their turn, then all enemies does theirs, and so on. The GM decides if the players were surprised, and if they were, the enemies start taking turns.
+The moment things get hostile, combat begins. In combat players and enemies take turns doing actions such as strafing and shooting. If there are more than one player, they may choose their turn order. All players do their turn, then all enemies does theirs, and so on. The GM decides if the players were surprised, and if they were, the enemies start the first turn.
 
 #### Adrenaline
 
@@ -78,7 +78,7 @@ You lose **1 ADR** when the following happens:
 - Go one turn in combat without attacking
 - Leave a room without attacking an enemy (including if the room was empty)
 
-Each class has an Adrenaline Skill Tree, where the characters gain skills depending on their level of adrenaline.
+Each character has an Adrenaline Tree, where they gain skills depending on their level of adrenaline.
 
 #### Actions
 
@@ -93,81 +93,85 @@ During your turn, you can take two actions from the list below. You may take the
 
 The actions are explained further below:
 
-#### Move
+##### Move
 
 This action represents all types of movement from point A to B. One movement action will usually take you across a room.
 
-#### Interact with environment
+##### Interact with environment
 
 This action represents opening doors, pushing buttons, picking up things and so on. Some interactions, such as searching a terminal for a password or bending open a malfunctioning door, may require more time than others, the GM decides the number of actions it will take, sometimes even multiple turns.
 
-#### Strafe
+##### Strafe
 
 Strafing represents moving in parallel to an enemy, avoiding their attacks. When you choose this action, you strafe until your next turn. **All damage to and from a strafing character is halved (rounded up)**.
 
-#### Reload
+##### Reload
 
 A gun must sometimes be reloaded or unjammed, this action represents this. Each time this happens, you have to use up the amount of *clips* required to ready the weapon again.
 
-#### Equip Weapon
+##### Equip Weapon
 
 You can only have one weapon equipped, to use a different weapon you have to choose this action.
 
-### Attacking
+#### Attacking
 
-#### Headshots
+##### Headshots
 
 When attacking and rolling the highest amount with a weapon die, the character also deals 1 headshot. Most enemies can be killed with one headshot, some more.
 
-#### Explode
+##### Explode
 
 Some skills and weapons give your dice the ability to "explode", this means that if you roll the highest possible on a die, you get to roll one more time and add your result to the last.
 
-#### Armor
+##### Armor
 
 When a character takes damage, if they have armor, they roll their armor die. They then subtract the amount of damage that they roll. However, the armor breaks on **1** (and cannot be used again). If you roll the highest possible, you subtract all damage.
 
-#### Line of sight
+##### Line of sight
 
 Players and enemies can only attack you they can see their targets. A character can be also be partly covered, in which the character only takes half of any damage taken (rounded up).
 
-## Classes
+## Adrenaline Trees
 
-### Commando
 
-| Skill            | Ability                                                           | ADR |
-| ---------------- | ----------------------------------------------------------------- | --- |
-| Accuracy         | Full damage to target while *strafing*                            | 1+  |
-| Rush             | You can do one more action each round                             | 5+  |
-| Dual Wield       | You can wield and *shoot* with two guns using one action          | 10+ |
-| Search & Destroy | Consumes 10 ADR: When entering a room, *shoot* once on each enemy | 12+ |
+###  Spree (1+ ADR)
 
-### Brute
+| d4  | Skill            | Ability                                                                                       | ADR |
+| --- | ---------------- | --------------------------------------------------------------------------------------------- | --- |
+| 1   | Accuracy         | Full damage to target while *strafing*                                                        | 1+  |
+| 2   | Hightened Senses | You can sense the amount of danger nearby                                                     | 1+  |
+| 3   | Flesh Armor      | Your skin is hard as steel. It works like a normal *d4 Armor*. Lose half ADR on a **1**       | 1+  |
+| 4   | Decode           | Consumes 1 ADR: You can *hack* small objects such as turrets or terminals to do your bidding. | 1+  |
 
-| Skill       | Ability                                                                                 | ADR |
-| ----------- | --------------------------------------------------------------------------------------- | --- |
-| Flesh Armor | Your skin is hard as steel. It works like a normal *d4 Armor*. Lose half ADR on a **1** | 1+  |
-| Rage        | Gain 1 ADR whenever human takes damage.                                                 | 5+  |
-| Slayer      | Use a d20 for *melee*. *Explodes* when rolling **20**                                   | 10+ |
-| Warcry      | You may consume any amount of ADR when afflicting damage to do +1 damage per ADR.       | 10+ |
 
-### Technomancer
 
-| Skill       | Ability                                                                                               | ADR |
-| ----------- | ----------------------------------------------------------------------------------------------------- | --- |
-| Decode      | Consumes 1 ADR: You can *hack* small objects such as turrets or terminals to do your bidding.         | 1+  |
-| Fine-tune   | When you *shoot*, you can use one die higher or lower                                                 | 5+  |
-| Mindhacker  | *Hack* enemies with showing cybernetics. Roll a *d20* to see how many points of technoflesh you hack. | 10+ |
-| Open Sesame | Consumes 10 ADR: *Hack* any door to open it.                                                          | 12+ |
+### Rampage (5+ ADR)
 
-### Psi-Ops
+| d4  | Skill     | Ability                                                                              | ADR |
+| --- | --------- | ------------------------------------------------------------------------------------ | --- |
+| 1   | Rush      | You can do one more action each round                                                | 5+  |
+| 2   | Rage      | Gain 1 ADR whenever human takes damage.                                              | 5+  |
+| 3   | Fine-tune | When you *shoot*, you can use one die higher or lower                                | 5+  |
+| 4   | Terror    | You may *attack* *d4* psychic damage any enemy you can see. Lose half ADR on a **1** | 5+  |
 
-| Skill            | Ability                                                                              | ADR |
-| ---------------- | ------------------------------------------------------------------------------------ | --- |
-| Hightened Senses | You can sense the amount of danger nearby                                            | 1+  |
-| Terror           | You may *attack* *d4* psychic damage any enemy you can see. Lose half ADR on a **1** | 5+  |
-|                  |                                                                                      | 10+ |
-|                  |                                                                                      | 12+ |
+
+### Dominating (10+ ADR)
+
+| d4  | Skill      | Ability                                                                                               | ADR |
+| --- | ---------- | ----------------------------------------------------------------------------------------------------- | --- |
+| 1   | Dual Wield | You can wield and *shoot* with two guns using one action                                              | 10+ |
+| 2   | Slayer     | Use a d20 for *melee*. *Explodes* when rolling **20**                                                 | 10+ |
+| 3   | Warcry     | You may consume any amount of ADR when afflicting damage to do +1 damage per ADR.                     | 10+ |
+| 4   | Mindhacker | *Hack* enemies with showing cybernetics. Roll a *d20* to see how many points of technoflesh you hack. | 10+ |
+
+
+### Unstoppable (12+ ADR)
+
+| d2  | Skill            | Ability                                                           | ADR |
+| --- | ---------------- | ----------------------------------------------------------------- | --- |
+| 1   | Open Sesame      | Consumes 10 ADR: *Hack* any door to open it.                      | 12+ |
+| 2   | Search & Destroy | Consumes 10 ADR: When entering a room, *shoot* once on each enemy | 12+ |
+
 
 ## Weapons
 
