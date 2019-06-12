@@ -6,6 +6,7 @@
   - [Setting](#setting)
   - [Design Philosphy](#design-philosphy)
     - [Dice Mechanic](#dice-mechanic)
+  - [Generating Characters](#generating-characters)
   - [Playing 1991](#playing-1991)
     - [Enemies](#enemies)
     - [Out of combat](#out-of-combat)
@@ -40,10 +41,16 @@ Primary objectives, one per player (destroy station, send secret data, protect t
 no dice-checks. just do stuff.
 explore rooms -> kill things -> get key -> get to elevator -> DEATH
 “Soft objectives” should feel like opportunities (unlock armory, send distress signal)
+run n gun tactics is encouraged
+highly lethal. just roll a new character that spawns somewhere near
 
 ### Dice Mechanic
 
 In general, rolling the highest possible on a die (6 on a d6, 12 on a d12) will give you a big bonus such as a "headshot" or the dice "explodes". Likewise, rolling a 1 will give you some kind of penalty.
+
+## Generating Characters
+
+They have an adrenaline tree, a background (criminal, fanatic, amnesiac), a purpose.
 
 ## Playing 1991
 
@@ -149,7 +156,7 @@ Players and enemies can only attack you they can see their targets. A character 
 
 | d4  | Skill     | Ability                                                                              | ADR |
 | --- | --------- | ------------------------------------------------------------------------------------ | --- |
-| 1   | Rush      | You can do one more action each round                                                | 5+  |
+| 1   | Haste     | You can do one more action each round                                                | 5+  |
 | 2   | Rage      | Gain 1 ADR whenever human takes damage.                                              | 5+  |
 | 3   | Fine-tune | When you *shoot*, you can use one die higher or lower                                | 5+  |
 | 4   | Terror    | You may *attack* *d4* psychic damage any enemy you can see. Lose half ADR on a **1** | 5+  |
