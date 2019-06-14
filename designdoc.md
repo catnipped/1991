@@ -50,7 +50,9 @@ In general, rolling the highest possible on a die (6 on a d6, 12 on a d12) will 
 
 ## Generating Characters
 
-They have an adrenaline tree, a background (criminal, fanatic, amnesiac), a purpose.
+They have an adrenaline tree, a background (criminal, fanatic, amnesiac), a purpose. There are four stats: Strength, Endurance, Reflexes, Morale
+They have an "Instinct": "have faith in the empire", "survive at any cost", "avenge the people"
+
 
 ## Playing 1991
 
